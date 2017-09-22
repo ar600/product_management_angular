@@ -1,0 +1,8 @@
+<div *ngFor='let product of products, let index = index' class="plist">
+  <h2 >Title: {{product.title}}</h2>
+  <h2 >Price: {{product.price}}</h2>
+  <button type="button" name="delete" (click)='delete(index)'>Delete</button>
+  <button type="button" name="edit" (click)="edit(index)">Edit</button>
+  <hr>
+</div>
+<!-- <app-create (mySubmitEventEmitter)='addFunc(event)'></app-create> -->
